@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans
+        xmlns="http://www.springframework.org/schema/beans"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.springframework.org/schema/beans
+                http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
+    <bean id = "emp" class="org.example.Employee">
+    </bean>
+    <bean id = "res" class="org.example.examples.Restaurant">
+        <property name="name" value="abc">
+        </property>
+        <property name="address" value="Rmz">
+        </property>
+    </bean>
+
+    <bean id = "res1" class="org.example.examples.Restaurant">
+        <property name="name" value="go khana">
+        </property>
+        <property name="address" value="floor 4">
+        </property>
+    </bean>
+
+    <bean id = "res2" class="org.example.examples.Restaurant">
+        <constructor-arg value="Swiggy">
+        </constructor-arg>
+        <constructor-arg value="Rmz ecoworld">
+        </constructor-arg>
+    </bean>
+
+    <bean id = "res3" class="org.example.examples.Restaurant">
+        <constructor-arg value="Zommato">
+        </constructor-arg>
+        <constructor-arg value="Bengaluru">
+        </constructor-arg>
+    </bean>
+
+    <bean id = "oracle bean" class="org.example.examples.ConnectionDb">
+        <constructor-arg value="Rishi">
+        </constructor-arg>
+        <constructor-arg value="mnb@12">
+        </constructor-arg>
+        <constructor-arg value="Oracle">
+        </constructor-arg>
+    </bean>
+
+    <bean id = "sql" class="org.example.examples.ConnectionDb">
+        <constructor-arg value="Mit">
+        </constructor-arg>
+        <constructor-arg value="ertt">
+        </constructor-arg>
+        <constructor-arg value="sql">
+        </constructor-arg>
+    </bean>
+
+
+
+</beans>
